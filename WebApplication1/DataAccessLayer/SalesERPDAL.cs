@@ -15,6 +15,6 @@ namespace WebApplication1.DataAccessLayer
         {
             modelBuilder.Entity<Employee>().ToTable("TblEmployee");
             base.OnModelCreating(modelBuilder);
-        }
+        } 
     }
 }

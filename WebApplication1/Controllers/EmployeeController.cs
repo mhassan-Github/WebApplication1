@@ -8,11 +8,11 @@ using WebApplication1.ViewModels;
 
 namespace WebApplication1.Controllers
 {
-    public class TestController : Controller
+    public class EmployeeController : Controller
     {
        
 
-        public ActionResult GetView()
+        public ActionResult Index()
         {
             EmployeeListViewModel employeeListViewModel = new EmployeeListViewModel();
 
@@ -36,9 +36,8 @@ namespace WebApplication1.Controllers
                 }
                 empViewModels.Add(empViewModel);
             }
-            employeeListViewModel.Employees = empViewModels;
-            employeeListViewModel.UserName = "Admin";
-            return View("MyView", employeeListViewModel);
+            employeeListViewModel.Employees = empViewModels;            
+            return View("Index", employeeListViewModel);
         }
 
         
